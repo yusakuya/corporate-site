@@ -256,18 +256,18 @@ h1 {
   height: 100px;
   background-image: url("../images/news/sub_cover.jpg");
   background-size: cover; }
+  #news_image h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 2px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     #news_image {
-      background-image: url("../images/news/sub_cover@2x.jpg"); }
-      #news_image h2 {
-        margin-top: 40px;
-        text-align: center;
-        font-size: 16px;
-        font-size: 1.6rem;
-        color: #FFF;
-        font-weight: bold;
-        letter-spacing: 2px; } }
-  @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 550px), (min-resolution: 2dppx) and (min-width: 550px) {
+      background-image: url("../images/news/sub_cover@2x.jpg"); } }
+  @media (min-width: 550px) {
     #news_image {
       text-align: left;
       height: 200px; }
