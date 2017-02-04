@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>株式会社サンプル</title>
+  <title>NEWS | 株式会社サンプル</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -29,6 +29,15 @@
 
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -117,16 +126,7 @@
             <li><a href="news.html">ニュースリリース</a></li>
             <li><a href="company.html">会社概要</a></li>
           </ul>
-          <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-width="300" data-height="300"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
-        </div>
+        <div class="fb-page fb-iflame" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="210" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>        </div>
       </div>
     </div>
   </div>
@@ -150,9 +150,9 @@
       <!-- columns -->
       <div class="four columns">
         <ul class="foot_navi">
-          <li><a href="">TOPページ</a></li>
-          <li><a href="">ニュースリリース</a></li>
-          <li><a href="">会社概要</a></li>
+          <li><a href="index.html">TOPページ</a></li>
+          <li><a href="news.html">ニュースリリース</a></li>
+          <li><a href="company.html">会社概要</a></li>
         </ul>
       </div>
       <!-- columns -->
@@ -175,7 +175,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 <script>
   $(function(){
 
@@ -189,7 +188,6 @@
 
   });
 </script>
-
 
 </body>
 </html>

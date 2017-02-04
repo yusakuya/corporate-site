@@ -163,7 +163,7 @@ header {
       font-size: 2.2rem;
       color: #42b9d0;
       padding: 50px 0 41px 0;
-      letter-spacing: 0.2rem; }
+      letter-spacing: 0.2em; }
     #news_area .news_lists li {
       list-style: none;
       font-size: 14px;
@@ -187,6 +187,7 @@ footer {
       padding: 0 6%;
       margin: 0 auto; }
     footer .foot_navi {
+      font-family: "Helvetica Neue";
       margin-top: 20px; }
       footer .foot_navi li {
         list-style: none;
@@ -202,6 +203,7 @@ footer {
           font-size: 1.6rem;
           padding: 16px 0; } }
   footer .foot_address {
+    font-family: "Helvetica Neue";
     font-size: 16px;
     font-size: 1.6rem;
     padding-top: 10px; }
@@ -248,6 +250,7 @@ h1 {
   padding: 0; }
 
 #news_image {
+  font-family: "Helvetica Neue";
   text-align: center;
   padding: 0;
   height: 100px;
@@ -262,25 +265,29 @@ h1 {
         font-size: 16px;
         font-size: 1.6rem;
         color: #FFF;
-        font-weight: bold; } }
+        font-weight: bold;
+        letter-spacing: 2px; } }
   @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 550px), (min-resolution: 2dppx) and (min-width: 550px) {
     #news_image {
       text-align: left;
       height: 200px; }
       #news_image h2 {
         margin-top: 80px;
-        font-size: 38px;
-        font-size: 3.8rem; } }
+        font-size: 32px;
+        font-size: 3.2rem; } }
+
+#contents {
+  font-family: "Helvetica Neue";
+  padding-top: 20px; }
 
 #news_release {
-  margin-bottom: 100px; }
+  font-family: "Hiragino Kaku Gothic ProN"; }
   #news_release h2 {
-    margin: 20px 0;
-    padding: 20px 0;
+    padding-bottom: 15px;
     color: #42b9d0;
     border-bottom: 3px solid #42b9d0;
-    font-size: 22px;
-    font-size: 2.2rem;
+    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold; }
   #news_release .news_li {
     margin-top: 10px;
@@ -288,51 +295,96 @@ h1 {
     list-style: none;
     display: block; }
     #news_release .news_li li {
-      margin-bottom: 15px; }
+      list-style: none;
+      margin-bottom: 10px; }
       #news_release .news_li li span {
-        margin-right: 10px;
+        font-family: "Helvetica Neue";
+        display: block;
+        margin-bottom: 3px;
         color: #42b9d0;
         font-weight: bold; }
+  @media (min-width: 550px) {
+    #news_release {
+      padding-top: 15px;
+      padding-right: 20px; }
+      #news_release h2 {
+        font-size: 20px;
+        font-size: 2rem;
+        padding-bottom: 20px; }
+      #news_release .news_li li {
+        padding-bottom: 5px; }
+        #news_release .news_li li span {
+          display: inline-block;
+          margin-bottom: 0;
+          padding-right: 10px; } }
 
 #side_menu {
-  margin-top: 40px;
-  margin-bottom: 0; }
+  font-family: "Helvetica Neue";
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 20px; }
   #side_menu h3 {
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 0;
-    height: 30px;
-    background-color: #eaf2f4;
+    background-color: #f3f9fb;
     color: #42b9d0;
     font-size: 14px;
     font-size: 1.4rem;
     font-weight: bold;
-    letter-spacing: 0.2em;
-    line-height: 2.0; }
+    letter-spacing: 0.2rem; }
   #side_menu .con_li {
-    list-style: none;
-    margin: 10px 10px 20px 0; }
+    list-style: none; }
     #side_menu .con_li li {
-      padding: 5px;
+      padding: 10px 10px 10px 20px;
+      margin-bottom: 0px;
       background-image: url("../images/news/side_arrow.png");
       background-repeat: no-repeat;
       background-position: 8px center;
-      border-bottom: 1px solid #eaf2f4; }
+      border-bottom: 1px solid #e5e5e5; }
       #side_menu .con_li li a {
         text-decoration: none;
-        margin-left: 10px; }
+        color: #339fd1; }
+        #side_menu .con_li li a:hover {
+          color: #1EAEDB; }
 
+@media (max-width: 550px) {
+  #side_menu h3 {
+    display: none; }
+  #side_menu ul {
+    display: none; } }
 #company_info {
-  margin-bottom: 100px; }
+  font-family: "Hiragino Kaku Gothic ProN"; }
   #company_info h2 {
-    margin-top: 20px;
-    padding-top: 20px 0;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
     color: #42b9d0;
     border-bottom: 3px solid #42b9d0;
-    font-size: 22px;
-    font-size: 2.2rem;
-    font-weight: bold; }
-  #company_info .company_li {
-    width: 100%;
-    border-bottom: 1px solid #eaf2f4; }
+    font-size: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.25; }
+  #company_info table {
+    display: table;
+    border-color: grey;
+    font-size: 14px;
+    font-size: 1.4rem; }
+  #company_info th {
+    padding: 20px 20px 20px 0;
+    color: #626262; }
+  #company_info td {
+    color: #626262;
+    padding: 20px 0; }
+  @media (min-width: 550px) {
+    #company_info {
+      padding-top: 15px;
+      padding-right: 20px; }
+      #company_info h2 {
+        font-size: 20px;
+        font-size: 2rem;
+        padding-bottom: 20px; } }
+
+.fb-iflame {
+  display: inline;
+  position: relative; }
 
 /*# sourceMappingURL=sample.css.map */

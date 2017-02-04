@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>株式会社サンプル</title>
+  <title>COMPANY INFO | 株式会社サンプル</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -22,13 +22,23 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/sample.css">
-
+  
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -93,14 +103,14 @@
       <div class="nine columns">
         <div id="company_info">
             <h2>会社概要</h2>
-            <table class="company_li">
+            <table class="u-full-width">
               <tr><th>会社名</th><td>株式会社サンプル</td></tr>
               <tr><th>代表取締役</th><td>煌木　太郎</td></tr>
               <tr><th>従業員数</th><td>50名</td></tr>
               <tr><th>所在地</th><td>東京都◯◯区◯◯町 560-0-0</td></tr>
               <tr><th>TEL</th><td>03-0000-0000</td></tr>
               <tr><th>FAX</th><td>03-0000-0000</td></tr>
-              <tr><th>事業内容</th><td>・デザイン事業部<br>・インターネット関連事業部<br>・ソフトウェア関連事業部<br>・◯◯事業部<br>・◯◯事業部</td></li>
+              <tr><th>事業内容</th><td>・デザイン事業部<br>・インターネット関連事業部<br>・ソフトウェア関連事業部<br>・◯◯事業部<br>・◯◯事業部</td>
             </table>
           </div>
         </div>
@@ -114,15 +124,7 @@
             <li><a href="news.html">ニュースリリース</a></li>
             <li><a href="company.html">会社概要</a></li>
           </ul>
-          <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-width="300" data-height="300"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+          <div class="fb-page fb-iflame" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>        </div>
         </div>
       </div>
     </div>
@@ -147,9 +149,9 @@
       <!-- columns -->
       <div class="four columns">
         <ul class="foot_navi">
-          <li><a href="">TOPページ</a></li>
-          <li><a href="">ニュースリリース</a></li>
-          <li><a href="">会社概要</a></li>
+          <li><a href="index.html">TOPページ</a></li>
+          <li><a href="news.html">ニュースリリース</a></li>
+          <li><a href="company.html">会社概要</a></li>
         </ul>
       </div>
       <!-- columns -->
@@ -172,7 +174,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 <script>
   $(function(){
 
@@ -186,7 +187,6 @@
 
   });
 </script>
-
 
 </body>
 </html>
